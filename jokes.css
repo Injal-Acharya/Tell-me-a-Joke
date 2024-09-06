@@ -5,7 +5,7 @@
 
 body {
     background-image: url("https://img.freepik.com/free-photo/funny-monkey-wearing-hat_23-2150844033.jpg?size=626&ext=jpg");
-    /* background-size: cover; */
+    background-size: cover;
     background-blend-mode: hue;
 }
 
@@ -58,22 +58,63 @@ div {
 }
 
 .jokeArea {
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgb(71, 64, 64);
+    opacity: 0.4;
     box-shadow: 0px 0px 4px 4px #000;
     width: max-content;
     height: max-content;
-    margin: 2rem auto;
+    margin: 10rem auto;
     border-radius: 20%;
 }
 
 .Joke {
-    color: rgb(0, 255, 191);
+    color: #F7DC6F;
+    font-weight: bold;
+    font-style:italic;
+    background-color:rgb(1, 78, 97);
     z-index: 1;
     padding: 10%;
 }
 
-[class*="col-"] {
-    width: 100%;
-  }
-  
+@media (max-width: 646px) {
+    html {
+        font-size: 80%;
+    }
+
+    nav {
+        height: max-content;
+        width: max-content;
+    }
+
+    .logoImg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .jokeArea {
+        margin-top: 20rem;
+    }
+    p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 518px) {
+    
+    nav {
+        display: flex;
+        vertical-align: middle;
+    }
+
+    .logoImg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .jokeArea {
+        margin: 20rem 6rem
+    }
+    p {
+        font-size: 20px;
+    }
+}
